@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AgtLucas/twisted-mind/issues"
   },
-  "homepage": "https://github.com/AgtLucas/twisted-mind#readme"
+  "homepage": "https://github.com/AgtLucas/twisted-mind#readme",
+  "devDependencies": {
+    "hjs-webpack": "^8.1.0"
+  }
 }
