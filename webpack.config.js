@@ -6,8 +6,13 @@ const config = getConfig({
   clearBeforeBuild: true
 })
 
-config.module.loaders.push({
-  test: /\.coffee$/, loader: 'coffee-loader'
-})
+config.module.loaders.push(
+  {
+    test: /\.coffee$/, loader: 'coffee-loader'
+  },
+  {
+    test: /\.css$/, loader: 'style-loader!css-loader!postcss-loader'
+  }
+)
 
 module.exports = config
